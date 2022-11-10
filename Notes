@@ -1,0 +1,14 @@
+Simple syntax 
+Dyanmic language 
+Easy to setup
+Large eco-system. 
+Many in-built packages and external custom built packages
+
+It is flexible meaning not restricted to language specifics like library functionalities or data types, so can be extended widely leading it to be used in many categories,such as:
+--> Web development: Popular libraries being Django or flask(light-weight)
+--> Data scicence, Machine Learning or AI: Numpy, Pandas etc
+--> Web scrwalers
+--> Automating tasks like Devops or general tasks like spreadsheets
+--> Libraries for App development and game dev are available but not likely to be used as better alternatives are present 
+
+Base interpreter is a program that knows how to translate python program to instructions the computer can understand
