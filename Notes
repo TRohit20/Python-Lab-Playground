@@ -6,9 +6,55 @@ Many in-built packages and external custom built packages
 
 It is flexible meaning not restricted to language specifics like library functionalities or data types, so can be extended widely leading it to be used in many categories,such as:
 --> Web development: Popular libraries being Django or flask(light-weight)
---> Data scicence, Machine Learning or AI: Numpy, Pandas etc
---> Web scrwalers
+--> Data science, Machine Learning or AI: Numpy, Pandas etc
+--> Web scrawler
 --> Automating tasks like Devops or general tasks like spreadsheets
 --> Libraries for App development and game dev are available but not likely to be used as better alternatives are present 
 
 Base interpreter is a program that knows how to translate python program to instructions the computer can understand
+
+IDE is a integrated Development Environment as they have everything you need to work and execute your projects
+
+Data types:
+Like every other programming languages, even python has data types such as:
+Strings,these can be written in double or single quotes, its all the same
+Integers or float or long or double are some numbers.
+
+String concatenation:
+A fancy way of combining or gluing multiple strings or integers and strings.
+In other languages, the integer is by default converted but in python, we need to explicitly convert it using:
+str(int) --> this is also called type casting
+A more elegant way would be:
+print(f"xxx {int}  xxx") --> f here identifies the value in bracket is not string
+
+Variables:
+These are nothing but containers storing values or data
+Syntax: ref_var = ...
+Note: Python is dynamically typed so no need to type or declare the data type or so. Naming convention is also quite simple,
+you can separate multiple words by under-scroll
+*Although you can name your variables anything, python has some words which are have specific or special meaning to python, these are called reserved Keywords
+List of reserved keywords:
+False,	def,if,	raise,None,	del,import,	return,True,elif,in,try,and,else,is,while,as,except,lambda,with,assert,finally,
+nonlocal,yield,break,for,not,class,from,or,continue,global,pass
+
+Encapsulate logic or program with functions:
+A function is defined using 'Def' keyword
+A method to avoid duplication by writing a block of code in it and calling it when required. Less code, more descriptive
+Syntax: def func_name( parameters1, parameter2 ):
+            //Body of function- You can do anything from creating variables to building logic
+--> Calling the function means executing it
+--> Information can be passed to functions using parameters(inputs), when required they have to be given or error will pop up
+Functions with Return Values or variables:
+We can return a value by using the return keyword.
+
+Scoping in Python:
+It means the availability of variables.
+A variable is only accessible or available from inside the region it is created
+1. Global Scope - The variables that are available from within any scope, variable can be from another file too
+2. Local Scope - Variables created inside a function that can only be accessed from within that function only
+
+Taking User inputs:
+It is actually pretty easy.
+Syntax: We use input() function. It is a in-built function of python
+input("parameter to let the user know something")
+Input function is treated as a string, so we typecast input inside functions
