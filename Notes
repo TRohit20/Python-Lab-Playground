@@ -39,6 +39,7 @@ nonlocal,yield,break,for,not,class,from,or,continue,global,pass
 
 Encapsulate logic or program with functions:
 A function is defined using 'Def' keyword
+You can also nest functions in a single line or logic
 A method to avoid duplication by writing a block of code in it and calling it when required. Less code, more descriptive
 Syntax: def func_name( parameters1, parameter2 ):
             //Body of function- You can do anything from creating variables to building logic
@@ -58,3 +59,22 @@ It is actually pretty easy.
 Syntax: We use input() function. It is a in-built function of python
 input("parameter to let the user know something")
 Input function is treated as a string, so we typecast input inside functions
+
+Validating the user input:
+This is crucial as it makes sure if the value or data given as input is correct or required in order to make sure we don't break the code
+Invalid Usr input can also lead to security risk or crashing the program
+
+If else conditional statements:
+Syntax: if condition:
+            //body to execute if right
+        elif condition:
+            //BOdy to execute if right
+        else:
+            //Body to execute if if condition is wrong
+We can nest multiple conditions using the elif(reserved keyword) as demonstrated above
+Conditionals can be true or false. Accordingly, code is executed
+![](../../../Desktop/Screenshot 2022-11-13 at 12.05.02 PM.png)
+
+Type() is a in-built function that shows which data type the given variable is of.
+Boolean is a type of data type in python that returns only in true or false values
+
