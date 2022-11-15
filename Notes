@@ -78,3 +78,32 @@ Conditionals can be true or false. Accordingly, code is executed
 Type() is a in-built function that shows which data type the given variable is of.
 Boolean is a type of data type in python that returns only in true or false values
 
+Nested IF ELSE Statements:
+Similar to nesting functions, we can nest multiple if or if else conditions to make the logic much simpler and organised
+It is not recommended to have nested if else statements but you will find it a lot due to the use case
+
+
+Error handling with Try/Except:  (Known as Try/Catch in other programming languages)
+Try keyword is a method in Python which lets you encapsulate a block of code and allows you to 'test' the code for errors
+If any errors are found, then it will catch the error and lets you handle it using 'except'
+Syntax:
+ try:
+    // BOdy
+ except:
+    //body
+
+Meaning: When you try a program and a error is caught, the except keyword will print or execute the code you want instead of presenting the error message in the console. Allows for easier handling of bugs
+You can cover multiple errors or cover missed edge cases
+Using except without any specifications means you'd like to handle in general any kind of errors
+
+
+While Loops:
+    Syntax:
+            while condition:
+                    //Body of the function
+
+Executes a set of statements as long as condition meets
+The concept of loop is simple as the name suggests.
+You intend the logic of the block of code in side the loop to be executed or repeated until the condition is broken or base condition is hit
+How many times a condition or loop should run is mentioned in the condition
+Condition is anything that checks if something is true or false, evaluates it for boolean value

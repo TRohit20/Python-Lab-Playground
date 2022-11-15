@@ -28,31 +28,38 @@ def first_function(days, custom_text):
 
 
 def test():
-    num1 = input("Enter a number: \n")
-    num2 = input("Enter another number: \n")
-    return int(num1) + int(num2)  # or print
+    try:
+        num1 = input("Enter a number: \n")
+        num2 = input("Enter another number: \n")
+        sm = int(num1) + int(num2)  # or print
+        print(sm)
+    except ValueError:
+        print('invalid input, Please enter a number')
 
 
-ans = test()
-print(ans)
+test()
 
 
 def days_to_units(days):
-
-    if days > 0:
-        return f'{days} days are {days * cal_units} {name_of_unit}'
-    elif days == 0:
-        print('You have entered 0. Enter a positive value')
-    else:
-        print('You have entered invalid input')
+    return f'{days} days are {days * cal_units} {name_of_unit}'
 
 
-u_ip = input("Hey user, enter number of days and I will convert it to hours count: \n")
+def validate_user_input():
+    # if u_ip.isdigit():
+    try:
+        user_input_number = int(u_ip)  # Casting
+        if user_input_number > 0:
+            cal_value = days_to_units(user_input_number)
+            print(cal_value)
+        elif user_input_number == 0:
+            print('You have entered 0. Enter a positive value')
+        else:
+            print('Please enter a valid positive integer')
+    except ValueError:
+        print("Input is not a program. Enter a integer")
 
-if u_ip.isdigit():
-    user_input_number = int(u_ip)  # Casting
-    cal_value = days_to_units(user_input_number)
-    print(cal_value)
-else:
-    print("Input is not a program. Enter a integer")
 
+u_ip = ""
+while u_ip != "exit":
+    u_ip = input("Hey user, enter number of days and I will convert it to hours count: \n")
+    validate_user_input()
