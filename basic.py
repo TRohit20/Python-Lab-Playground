@@ -47,7 +47,7 @@ def days_to_units(days):
 def validate_user_input():
     # if u_ip.isdigit():
     try:
-        user_input_number = int(u_ip)  # Casting
+        user_input_number = int(days_element)  # Casting
         if user_input_number > 0:
             cal_value = days_to_units(user_input_number)
             print(cal_value)
@@ -55,11 +55,20 @@ def validate_user_input():
             print('You have entered 0. Enter a positive value')
         else:
             print('Please enter a valid positive integer')
+# except: is also fine, it is generic so will catch and handle all errors
     except ValueError:
         print("Input is not a program. Enter a integer")
 
 
 u_ip = ""
 while u_ip != "exit":
-    u_ip = input("Hey user, enter number of days and I will convert it to hours count: \n")
-    validate_user_input()
+    u_ip = input("Hey user, enter number of days as a comma separated list and I will convert it to hours count: \n")
+    list_of_days = u_ip.split(",")
+    print(type(list_of_days))
+    print(type(list_of_days))
+
+    print(set(list_of_days))
+    print(type(set(list_of_days)))
+
+    for days_element in set(list_of_days):
+        validate_user_input()

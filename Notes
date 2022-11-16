@@ -1,5 +1,5 @@
 Simple syntax 
-Dyanmic language 
+Dynamic language
 Easy to setup
 Large eco-system. 
 Many in-built packages and external custom built packages
@@ -14,6 +14,16 @@ It is flexible meaning not restricted to language specifics like library functio
 Base interpreter is a program that knows how to translate python program to instructions the computer can understand
 
 IDE is a integrated Development Environment as they have everything you need to work and execute your projects
+
+Comments: Statements used in programs to add textual understanding to make it easier to understand
+we use "# " to write a comment and not only does it allow you to add notes to programs
+It also is used to prevent execution of certain code while testing. Commented code cannot be accessed or executed
+Syntax: # comment or write anything
+To comment out multiple lines of code we use three brackets
+Syntax: """ comment
+                comment
+                        comment """
+   As a best practise, it is recommended to use comments but not too much
 
 Data types:
 Like every other programming languages, even python has data types such as:
@@ -47,6 +57,9 @@ Syntax: def func_name( parameters1, parameter2 ):
 --> Information can be passed to functions using parameters(inputs), when required they have to be given or error will pop up
 Functions with Return Values or variables:
 We can return a value by using the return keyword.
+As you can nest functions, in case of them, the flow is inside out meaning:
+The last function executes first and moves out and so
+Order: Innermost function to outermost function
 
 Scoping in Python:
 It means the availability of variables.
@@ -107,3 +120,42 @@ The concept of loop is simple as the name suggests.
 You intend the logic of the block of code in side the loop to be executed or repeated until the condition is broken or base condition is hit
 How many times a condition or loop should run is mentioned in the condition
 Condition is anything that checks if something is true or false, evaluates it for boolean value
+
+
+Lists:
+A data type in python that is used to store multiple values or items in a single variable
+Syntax:
+       ref_var = [list_of_integers]
+       Eg: list = [1,2,3,4,5]
+Some use cases and operations on Lists are:
+Create, Access items, add items, remove items, change or modify items
+
+Now, how do we take values from a list and use them? We need to take each value one after the other or in some other way,
+So we use a loop called FOR-Each
+
+For-Each Loop:
+Used to iterate over a sequence such as lists so we can execute something for each item in the list
+Executing same function or logic while the times of execution depend on the condition
+    Syntax:
+            for ref_var(represents each element in the list) in 'list':
+                //body
+            (OR)
+            for ref_var in range(start:end):
+                //body
+Where, For and in are python keywords
+
+Sets:
+Another built-in data type in python.
+Similar to lists, this also stores multiple items of data in single variable
+Does not allow duplicate values. So, when a user enters same value multiple times it won;t be accepted so redundancy is cleared
+You can convert existing list into sets too
+Syntax:
+        ref_var = {unique values}
+        set(unique_values)
+        set(list[])
+Some basic operations you can do on set are:
+Create, add items, remove items, access items using loops
+
+We cannot access individual items using index in sets
+We cannot chnage or update values in set
+They do not have a defined order, random order which is why you cannot refer using index number
