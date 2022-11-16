@@ -219,3 +219,40 @@ Few examples being Math module for mathematical calculations, datetime module et
 -- Operating system module to work with Operating systems
 -- Logging modules allow you to log your errors or warning or configure how logging would look like
 Many more modules with lots of functions that can help
+
+*** How do you know which module to use or how to use modules?
+Google them see examples
+read through module documentation
+
+Difference between a module and a package?
+A module is basically a python file while package is a collection of multiple python files
+Package is more structured.
+
+Built-in VS Third-Party packages:
+There are only few modules that python comes pre-installed with
+There are many more modules out there which are not a part of the installation
+Some examples being: Pytorch, NumPy, Pandas, Tensorflow etc
+
+You need to install these third-party packages or modules
+Where do you find these modules and how do you install them?
+
+Python modules live in a python repository called PyPI-Python package index
+-- You can search for the required package and install and use them
+-- You can even search with description of what you are looking for
+-- Individuals can also publish their packages and work to that repository
+-- Python has over 290,000 packages
+
+How to install a package?
+Every programming language has it's own package manager such as NPM for javascript or gradle/maven for java
+Let us learn with an example, let us install Django package for web development
+In python, we install packages using a package manager tool called PIP
+PIP is the python package manager used to install external packages also called dependencies
+
+we install packages using the pip3 install command
+We can also uninstall in the same way
+
+An alternative to installing and uninstalling packags is:
+--> In Pycharm, YOU can click on 'Python Packages' tab in the bottom right
+--> In the search bar, Search as yuo would at PyPI website
+--> From the options of packages available, choose the one you want and install directly
+--> Deleting package is easy too.
