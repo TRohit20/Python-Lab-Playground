@@ -72,3 +72,5 @@ while u_ip != "exit":
 
     for days_element in set(list_of_days):
         validate_user_input()
+
+# Polished and better version of the above working is in Dictionary.py file!

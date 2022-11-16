@@ -8,5 +8,8 @@ for name in friends:
 # Adding items
 friends.add("Santosh")
 
+# Remove elements or items
 friends.remove("Sravya")
 print(friends)
+
+# YOU CANNOT UPDATE OR CHANGE THE VALUES OF SET.

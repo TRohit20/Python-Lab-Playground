@@ -15,7 +15,7 @@ Base interpreter is a program that knows how to translate python program to inst
 
 IDE is a integrated Development Environment as they have everything you need to work and execute your projects
 
-Comments: Statements used in programs to add textual understanding to make it easier to understand
+*Comments: Statements used in programs to add textual understanding to make it easier to understand
 we use "# " to write a comment and not only does it allow you to add notes to programs
 It also is used to prevent execution of certain code while testing. Commented code cannot be accessed or executed
 Syntax: # comment or write anything
@@ -25,19 +25,19 @@ Syntax: """ comment
                         comment """
    As a best practise, it is recommended to use comments but not too much
 
-Data types:
+*Data types:
 Like every other programming languages, even python has data types such as:
 Strings,these can be written in double or single quotes, its all the same
 Integers or float or long or double are some numbers.
 
-String concatenation:
+*String concatenation:
 A fancy way of combining or gluing multiple strings or integers and strings.
 In other languages, the integer is by default converted but in python, we need to explicitly convert it using:
 str(int) --> this is also called type casting
 A more elegant way would be:
 print(f"xxx {int}  xxx") --> f here identifies the value in bracket is not string
 
-Variables:
+*Variables:
 These are nothing but containers storing values or data
 Syntax: ref_var = ...
 Note: Python is dynamically typed so no need to type or declare the data type or so. Naming convention is also quite simple,
@@ -47,7 +47,7 @@ List of reserved keywords:
 False,	def,if,	raise,None,	del,import,	return,True,elif,in,try,and,else,is,while,as,except,lambda,with,assert,finally,
 nonlocal,yield,break,for,not,class,from,or,continue,global,pass
 
-Encapsulate logic or program with functions:
+***Encapsulate logic or program with functions:
 A function is defined using 'Def' keyword
 You can also nest functions in a single line or logic
 A method to avoid duplication by writing a block of code in it and calling it when required. Less code, more descriptive
@@ -61,23 +61,25 @@ As you can nest functions, in case of them, the flow is inside out meaning:
 The last function executes first and moves out and so
 Order: Innermost function to outermost function
 
-Scoping in Python:
+**Scoping in Python:
 It means the availability of variables.
 A variable is only accessible or available from inside the region it is created
 1. Global Scope - The variables that are available from within any scope, variable can be from another file too
 2. Local Scope - Variables created inside a function that can only be accessed from within that function only
 
-Taking User inputs:
+*Taking User inputs:
 It is actually pretty easy.
 Syntax: We use input() function. It is a in-built function of python
 input("parameter to let the user know something")
 Input function is treated as a string, so we typecast input inside functions
+NOTE: Important thing to understand is all input in python is taken or read as string
+So it is important to cast or convert the input to desired type
 
-Validating the user input:
+*Validating the user input:
 This is crucial as it makes sure if the value or data given as input is correct or required in order to make sure we don't break the code
 Invalid Usr input can also lead to security risk or crashing the program
 
-If else conditional statements:
+*If else conditional statements:
 Syntax: if condition:
             //body to execute if right
         elif condition:
@@ -91,12 +93,12 @@ Conditionals can be true or false. Accordingly, code is executed
 Type() is a in-built function that shows which data type the given variable is of.
 Boolean is a type of data type in python that returns only in true or false values
 
-Nested IF ELSE Statements:
+*Nested IF ELSE Statements:
 Similar to nesting functions, we can nest multiple if or if else conditions to make the logic much simpler and organised
 It is not recommended to have nested if else statements but you will find it a lot due to the use case
 
 
-Error handling with Try/Except:  (Known as Try/Catch in other programming languages)
+**Error handling with Try/Except:  (Known as Try/Catch in other programming languages)
 Try keyword is a method in Python which lets you encapsulate a block of code and allows you to 'test' the code for errors
 If any errors are found, then it will catch the error and lets you handle it using 'except'
 Syntax:
@@ -110,7 +112,7 @@ You can cover multiple errors or cover missed edge cases
 Using except without any specifications means you'd like to handle in general any kind of errors
 
 
-While Loops:
+*While Loops:
     Syntax:
             while condition:
                     //Body of the function
@@ -122,7 +124,7 @@ How many times a condition or loop should run is mentioned in the condition
 Condition is anything that checks if something is true or false, evaluates it for boolean value
 
 
-Lists:
+*Lists:
 A data type in python that is used to store multiple values or items in a single variable
 Syntax:
        ref_var = [list_of_integers]
@@ -133,7 +135,7 @@ Create, Access items, add items, remove items, change or modify items
 Now, how do we take values from a list and use them? We need to take each value one after the other or in some other way,
 So we use a loop called FOR-Each
 
-For-Each Loop:
+**For-Each Loop:
 Used to iterate over a sequence such as lists so we can execute something for each item in the list
 Executing same function or logic while the times of execution depend on the condition
     Syntax:
@@ -144,7 +146,7 @@ Executing same function or logic while the times of execution depend on the cond
                 //body
 Where, For and in are python keywords
 
-Sets:
+**Sets:
 Another built-in data type in python.
 Similar to lists, this also stores multiple items of data in single variable
 Does not allow duplicate values. So, when a user enters same value multiple times it won;t be accepted so redundancy is cleared
@@ -157,5 +159,63 @@ Some basic operations you can do on set are:
 Create, add items, remove items, access items using loops
 
 We cannot access individual items using index in sets
-We cannot chnage or update values in set
+We cannot change or update values in set
 They do not have a defined order, random order which is why you cannot refer using index number
+
+
+***Built-In functions:
+Functions that we don't have to write as python readily provides them to us.
+examples being: print or input or set or int()
+Python has many such functions that can be used
+We can use them by just giving parameters
+
+Call directly on a value function are also a type built-in functions:
+These are functions that are directly called on the value
+The parameter for these type of functions are the values that we are calling them on and
+In addition to that you can provide additional parameters too
+Eg Syntax:
+        value.split(", ")
+        // Where split is a inbuilt function being called on the value and value is it's parameter
+        // You can also give additional parameters in the brackets
+Each data type has its own set of built-in functions which are useful only that specific data type
+List or set or string or int have their own built-in functions
+
+**Dictionary:
+A data type in python.
+This is used to store values in "Key:Value" pairs
+It is a collection which also does not allow duplicate values
+Syntax:
+        ref_var = {"name":"Rohit","age":21}
+        Each value has a description in the form of key
+ Let us say you wanna access items from a list and store in dictionary
+        ref_var = {"key": list_name[index]}
+ You can use .get() or square bracket method to access elements in dictionary
+
+
+***Modules:
+It is just a .py file
+Modularize your project with modules
+Many projects will have complex logic and lot of code, so lot of functions and 100s or 1000s of code
+So we structure the code and logically organise it.
+A module should contain related code
+A project is distributed into multiple files for easier organisation and imported when required
+Syntax:
+       import file_name
+       from file_name import * //Import all from mentioned file
+       from file_name import variable_name
+Functions from imported files are used like this:
+       file_name.func_name()
+You can rename the file you import too:
+       import file_name as re_name
+You can import the whole file or module or specific variables and functions as per your will and requirements
+Here, a matter of taste is between importing the whole file and importing the whole content of the file
+If you import the whole file, you will have to mention the filename. then call the function required while that is not required
+when importing the contents of file
+
+**Built-in Python modules:
+Similar to functions, we also have modules in-built provided by python which are very useful
+You need to check what you need and find which functions to use to get the best result
+Few examples being Math module for mathematical calculations, datetime module etc
+-- Operating system module to work with Operating systems
+-- Logging modules allow you to log your errors or warning or configure how logging would look like
+Many more modules with lots of functions that can help
