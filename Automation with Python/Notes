@@ -1,4 +1,11 @@
-Task: Learn how to work with spreadsheets
+Task: Learn how to work with spreadsheets and automate tasks
 
 Read spreadsheets files and automate different tasks or works
 Very useful for data processing and working with large or multiple files
+
+Python has many built-in functions for handling files in general
+io module -- Create,read,write
+
+Python has a specific package to work with spreadsheets specifically meaning:
+- More practical functions for spreadsheets in specific
+- Easier to use

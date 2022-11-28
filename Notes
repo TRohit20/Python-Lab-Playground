@@ -256,3 +256,12 @@ An alternative to installing and uninstalling packags is:
 --> In the search bar, Search as yuo would at PyPI website
 --> From the options of packages available, choose the one you want and install directly
 --> Deleting package is easy too.
+
+Module = a .py file
+Package = collection of modules. Must contain a init.py file
+Library = Collection of Packages
+
+range():
+Creates a sequence of numbers starting from 0 by default when not provided a start range
+range(start,end)
+// list is exclusive so end is not included
